@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #000000;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff3131;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.footer-container{
+    background-color: #212329;
+    padding-bottom: 4rem;
+}
+
+.footer{
+    width: 80%;
+    height: 40vh;
+    background-color: #212329;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading{
+    display: flex;
+    flex-direction:column;
+    margin-right: 4rem;
+    margin-top: 4rem;
+}
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+}
+
+.footer-heading a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover{
+    color: red;
+    transition: 0.3s ease-out;
+}
+
+.footer-email-form{
+    margin-top: 4rem;
+}
+  #footer-email{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+    color: #b1b1b1;
+}
+
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #F9423D;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#footer-email-btn:hover{
+    cursor: pointer;
+    background-color: #3374F1;
+    transition:  all 0.4s ease-out;
+}
+
+/* -------------------------------CSS for Mobile Screen------------------------------------------- */
+
+nav .fa-xmark{
+    display: none;
+}
+nav .fa-bars{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background: #000000;
+    }
+    nav .fa-xmark{
+        display: block;
+        font-size: 25px;
+    }
+    nav .fa-bars{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff3131;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-xmark{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
