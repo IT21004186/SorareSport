@@ -24,6 +24,51 @@ body{
 .container{
     padding: 10px 10%;
 }
+.container1{
+    padding:  10px 20%;
+    margin-left: 25%;
+}
+/* ----------------------------------Profile logo section--------------------------- */
+.home_blob{
+    width: 400px;
+    fill: aliceblue;
+}
+.home_blob-img{
+    width: 150px;
+}
+/* --------------------------------------- --end-- ---------------------------- */
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20%;
+    align-items: flex-start;
+}
+.header-col-1{
+    flex-basis: 50%;
+    margin-left: -20%;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-col-2{
+    flex-basis: 50%;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 5%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
 
 nav{
     display: flex;

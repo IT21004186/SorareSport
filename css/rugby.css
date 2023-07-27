@@ -9,7 +9,7 @@ html{
 }
 body{
     background: #000000;
-    color: #000000;
+    color: #fff;
 }
 
 #header{
@@ -62,6 +62,7 @@ body{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    color: #000000;
 }
 
 .header-text h1{
