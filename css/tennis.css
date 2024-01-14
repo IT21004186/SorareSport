@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -137,10 +137,17 @@ nav ul li a:hover::after{
   
 .title{
       text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      padding-bottom: 5px;
+}
+.sub-title{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
   
 .des{
-      text-align: center;
+      text-align: justify;
+      font-family: 'Montserrat', sans-serif;
 }
 
 .footer-container{

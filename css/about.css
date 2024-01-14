@@ -20,6 +20,13 @@ body{
     background-position: center;
 }
 
+.user-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 1px solid grey;
+}
+
 .container{
     padding: 10px 10%;
 }
